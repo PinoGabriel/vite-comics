@@ -13,14 +13,14 @@ export default {
 
 <template>
     <section>
-        <div class="container">
+        <nav class="container">
             <div>
                 <img src="../assets/img/dc-logo.png" alt="logo">
             </div>
             <div>
-                <a href="#" v-for="element in navbar">{{ element }}</a>
+                <a class="border" href="#" v-for="element in navbar">{{ element }}</a>
             </div>
-        </div>
+        </nav>
     </section>
 </template>
 
@@ -48,9 +48,13 @@ a {
     font-weight: 600;
     text-decoration: none;
     color: black;
+    height: 130px;
+    display: inline-block;
+    line-height: 130px;
 }
 
 a:hover{
     color: #0282F9;
+    border-bottom: 5px solid #0282F9;
 }
 </style>
