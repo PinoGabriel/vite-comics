@@ -5,23 +5,23 @@ export default {
         return {
             links: [
                 {
-                    img: "../assets/img/buy-comics-digital-comics.png",
+                    img: "/img/buy-comics-digital-comics.png",
                     nome: "DIGITAL COMICS"
                 },
                 {
-                    img: "../assets/img/buy-comics-merchandise.png",
+                    img: "/img/buy-comics-merchandise.png",
                     nome: "DC MERCHANDISE"
                 },
                 {
-                    img: "../assets/img/buy-comics-subscriptions.png",
+                    img: "/img/buy-comics-subscriptions.png",
                     nome: "SUBSCRIPTION"
                 },
                 {
-                    img: "../assets/img/buy-comics-shop-locator.png",
+                    img: "/img/buy-comics-shop-locator.png",
                     nome: "COMIC SHOP LOCATOR"
                 },
                 {
-                    img: "../assets/img/buy-dc-power-visa.svg",
+                    img: "/img/buy-dc-power-visa.svg",
                     nome: "DC POWER VISA"
                 },
             ]
@@ -33,9 +33,9 @@ export default {
 <template>
     <section>
         <div class="container">
-            <div v-for="element in links">
+            <div class="elementLink" v-for="element in links">
                 <img :src="element.img" :alt="element.nome">
-                <p>{{ element.nome }}</p>
+                <a href="#">{{ element.nome }}</a>
             </div>
         </div>
     </section>
@@ -52,8 +52,26 @@ section {
     margin: 0 auto;
     min-height: 130px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+}
+
+img {
+    margin-right: 1rem;
+    width: 20%;
+}
+
+.elementLink {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+a {
+    font-size: 12px;
+    text-decoration: none;
+    color: white;
 }
 </style>
 

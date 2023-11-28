@@ -15,7 +15,7 @@ export default {
     <section>
         <nav class="container">
             <div>
-                <img src="../assets/img/dc-logo.png" alt="logo">
+                <img src="/img/dc-logo.png" alt="logo">
             </div>
             <div>
                 <a class="border" href="#" v-for="element in navbar">{{ element }}</a>
