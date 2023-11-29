@@ -27,7 +27,6 @@ export default {
 <style scoped>
 section {
     background-color: white;
-    margin-top: 50px;
 }
 
 img {
