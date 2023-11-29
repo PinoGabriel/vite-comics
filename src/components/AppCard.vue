@@ -2,7 +2,7 @@
 export default {
     name: "AppCard",
     props: {
-        mycard: Object
+        mycard: Object,
     }
 }
 

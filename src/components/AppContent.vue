@@ -11,12 +11,10 @@ export default {
 
 <template>
     <section>
-        
         <div class="container">
             <div class="seriesAbsolute">CURRENT SERIES</div>
             <AppCard v-for="elemento in myseries" :mycard="elemento"/>
             <button>LOAD MORE</button>
-            
         </div>
     </section>
 </template>
