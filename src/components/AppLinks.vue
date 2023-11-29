@@ -57,14 +57,13 @@ section {
 
 img {
     margin-right: 1rem;
-    width: 20%;
+    height: 50px;
 }
 
 .elementLink {
     align-items: center;
     display: flex;
     justify-content: center;
-    flex-wrap: nowrap;
     width: 100%;
 }
 
