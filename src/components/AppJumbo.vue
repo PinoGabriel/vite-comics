@@ -8,7 +8,7 @@ export default {
 
 <template>
     <section>
-        <img src="/img/jumbotron.jpg" alt="">
+        <img src="/img/jumbotron.jpg" alt="jumbo">
     </section>
 </template>
 
@@ -17,7 +17,7 @@ export default {
 <style scoped>
 img {
     display: block;
-    height: 40vh;
+    height: 45vh;
     width: 100%;
     object-fit: cover;
     object-position: top;

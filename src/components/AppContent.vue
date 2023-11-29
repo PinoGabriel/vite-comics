@@ -1,13 +1,22 @@
 <script>
+import AppCard from './AppCard.vue'
 export default {
-    name: "AppContent"
+    name: "AppContent",
+    props: ["myseries"],
+    components: {
+        AppCard
+    }
 }
 </script>
 
 <template>
     <section>
+        
         <div class="container">
-            <p> -- Content goes here -- </p>
+            <div class="seriesAbsolute">CURRENT SERIES</div>
+            <AppCard v-for="elemento in myseries" :mycard="elemento"/>
+            <button>LOAD MORE</button>
+            
         </div>
     </section>
 </template>
@@ -21,14 +30,28 @@ section {
 .container {
     width: 1100px;
     margin: 0 auto;
+    padding: 30px 0;
     min-height: 130px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
 }
 
-p {
+button {
+    background-color: #0282F9;
+    border: none;
+    color: white;
+    padding: 10px 40px;
+    margin: 0 auto;
+}
+
+.seriesAbsolute {
+    background-color: #0282F9;
+    padding: 10px 40px;
     font-weight: 600;
-    font-size: 25px;
+    position: absolute;
+    top: -20px;
+    left: -10px;
+    box-shadow: 4px 5px 2px 0px rgba(0,0,0,0.85);
 }
 </style>
